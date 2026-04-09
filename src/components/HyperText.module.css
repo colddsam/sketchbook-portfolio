@@ -1,0 +1,24 @@
+.hyperText {
+  display: inline-block;
+}
+
+.scrambling {
+  display: inline-block;
+  font-family: var(--font-doodle);
+  opacity: 0.5;
+  animation: jitter 0.1s ease-in-out infinite;
+}
+
+.resolved {
+  display: inline-block;
+}
+
+@keyframes jitter {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+}
+
+.space {
+  display: inline-block;
+  width: 0.3em;
+}

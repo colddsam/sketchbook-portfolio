@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  z-index: 2;
+  margin: -1px 0;
+}
+
+.svg {
+  width: 100%;
+  height: 50px;
+  display: block;
+}
+
+.path {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  transition: stroke-dashoffset 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drawn {
+  stroke-dashoffset: 0;
+}

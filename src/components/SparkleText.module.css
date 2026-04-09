@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.sparkle {
+  position: absolute;
+  pointer-events: none;
+  color: var(--ink-black);
+  animation: sparkle-pop 0.8s ease-out forwards;
+  z-index: 5;
+}
+
+@keyframes sparkle-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  30% {
+    opacity: 0.7;
+    transform: scale(1.2) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) rotate(90deg) translateY(-15px);
+  }
+}

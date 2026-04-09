@@ -1,0 +1,13 @@
+.container {
+  display: inline-flex;
+  justify-content: center;
+  overflow: hidden;
+  vertical-align: bottom;
+  min-width: 280px;
+  position: relative;
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+}

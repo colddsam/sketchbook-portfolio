@@ -1,0 +1,94 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 200;
+  pointer-events: none;
+}
+
+/* Subtle dotted background track */
+.trackLine {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.04) 0px,
+    rgba(0, 0, 0, 0.04) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+/* Ink fill — smooth gradient stroke */
+.inkFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  background: linear-gradient(
+    90deg,
+    var(--ink-black) 0%,
+    var(--graphite) 60%,
+    var(--pencil-gray) 100%
+  );
+  border-radius: 0 2px 2px 0;
+}
+
+/* Glowing tip dot */
+.tipDot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dotInner {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--ink-black);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.dotPulse {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: rgba(10, 10, 10, 0.15);
+  border-radius: 50%;
+  animation: dotPulseAnim 2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes dotPulseAnim {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Pencil emoji label */
+.percentLabel {
+  position: absolute;
+  top: 6px;
+  transform: translateX(-50%);
+}
+
+.percentText {
+  font-size: 12px;
+  line-height: 1;
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+}

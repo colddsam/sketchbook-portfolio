@@ -1,0 +1,57 @@
+.marqueeWrapper {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: marquee-scroll 20s linear infinite;
+  padding: 0.5rem 0;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: 2px solid var(--ink-black);
+  border-radius: 155px 10px 125px 10px / 10px 125px 10px 155px;
+  background: var(--surface-low);
+  white-space: nowrap;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: var(--ink-black);
+  color: var(--paper-white);
+  transform: rotate(-2deg) scale(1.1);
+  z-index: 5;
+}
+
+.tagIcon {
+  font-size: 0.65rem;
+  opacity: 0.4;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
