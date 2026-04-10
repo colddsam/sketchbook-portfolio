@@ -37,7 +37,7 @@ export default function About() {
                 <div className={styles.imageFrame}>
                   <div className={styles.imageContainer}>
                     <Image 
-                      src="/images/profile_v2.png" 
+                      src="/images/profile_v2.webp" 
                       alt="Samrat - Full Stack Developer and Graphic Designer Profile Picture" 
                       fill 
                       priority

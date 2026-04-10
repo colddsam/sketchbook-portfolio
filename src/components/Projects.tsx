@@ -16,7 +16,7 @@ const projects = [
     description: "Autonomous AI-powered B2B lead generation SaaS. Discovers local businesses via Google Places, qualifies them with Llama 3, and sends cold emails.",
     tech: ["React", "PostgreSQL", "Docker"],
     year: "2024",
-    image: "/images/cold_scout_v2.png",
+    image: "/images/cold_scout_v2.webp",
     link: "https://github.com/colddsam/coldscout"
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     description: "An advanced AI-powered fake news detection system that verifies text, images, and social media posts using Gemini AI, FastAPI, and Next.js.",
     tech: ["Next.js", "FastAPI", "Gemini AI"],
     year: "2024",
-    image: "/images/truth_guardian_v2.png",
+    image: "/images/truth_guardian_v2.webp",
     link: "https://github.com/colddsam/Truth-Guardian"
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     description: "Health Mate is your personal emergency support system and all-in-one health monitoring platform built with React and FastAPI.",
     tech: ["React", "FastAPI", "Python"],
     year: "2024",
-    image: "/images/health_mate_v2.png",
+    image: "/images/health_mate_v2.webp",
     link: "https://github.com/colddsam/Health-Care-Website"
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     description: "Futuristic AI content generation pipeline that transforms data into structured web articles and blogs using Llama/Gemini and robust automation.",
     tech: ["Python", "AI", "Automation"],
     year: "2023",
-    image: "/images/blog_automation_v2.png",
+    image: "/images/blog_automation_v2.webp",
     link: "https://github.com/colddsam"
   },
 ];

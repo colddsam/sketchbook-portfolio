@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samrat | Full Stack Developer & Creative Designer",
     description: "A creative portfolio showcasing the work of Samrat — Full Stack Developer & Creative Designer.",
-    creator: "@samrat", // Placeholder
+    site: "@colddsam",
+    creator: "@colddsam",
   },
   robots: {
     index: true,
@@ -39,6 +40,19 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "5nKg5xf4hIJu_aK0BVKpGxC_zmLcJ4aX0hU5PteFTmM",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/apple-icon-180x180.png" },
+    ],
+    other: [
+      { rel: "apple-touch-icon-precomposed", url: "/images/apple-icon-precomposed.png" },
+    ],
   },
 };
 
