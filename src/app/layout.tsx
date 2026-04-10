@@ -43,15 +43,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/images/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/images/favicon-16x16.png?v=2", sizes: "16x16", type: "image/png" },
+      { url: "/images/favicon-32x32.png?v=2", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/images/apple-icon-180x180.png" },
+      { url: "/images/apple-icon-180x180.png?v=2" },
     ],
     other: [
-      { rel: "apple-touch-icon-precomposed", url: "/images/apple-icon-precomposed.png" },
+      { rel: "apple-touch-icon-precomposed", url: "/images/apple-icon-precomposed.png?v=2" },
     ],
   },
 };

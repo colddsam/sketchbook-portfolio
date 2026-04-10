@@ -11,17 +11,17 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#2a2a2a",
     icons: [
       {
-        src: "/favicon.ico",
+        src: "/favicon.ico?v=2",
         sizes: "any",
         type: "image/x-icon",
       },
       {
-        src: "/images/android-icon-192x192.png",
+        src: "/images/android-icon-192x192.png?v=2",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        src: "/images/apple-icon-180x180.png",
+        src: "/images/apple-icon-180x180.png?v=2",
         sizes: "180x180",
         type: "image/png",
       },
