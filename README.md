@@ -50,3 +50,6 @@ npm run build
 
 ---
 *Sketched, Coded, and Deployed by [Samrat (@colddsam)](https://github.com/colddsam)*
+
+# sketchbook-portfolio
+Part digital sketchbook, part professional portfolio. Built with Next.js, Framer Motion, and probably too much coffee. ☕✨
